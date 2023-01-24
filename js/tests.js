@@ -1,33 +1,12 @@
-function getShippingCost(country) {
-  let message;
+function formatMessage(message, maxLength) {
+  let result;
   // Change code below this line
-
-  switch (country) {
-    case "China":
-      message = "Shipping to China will cost 100 credits";
-      price = 100;
-      break;
-
-    case "Chile":
-      message = "Shipping to Chile will cost 250 credits";
-      price = 250;
-      break;
-
-    case "Australia":
-      message = "Shipping to Australia will cost 170 credits";
-      price = 170;
-      break;
-
-    case "Jamaica":
-      message = "Shipping to Jamaica will cost 120 credits";
-      price = 120;
-      break;
-
-      default:
-          message = "Sorry, there is no delivery to your country";
+  if (message.length <= maxLength) {
+    result = message;
+  } else {
+    result = `${message.slice(0, maxLength)}...`;
   }
-  // Change code above this line
-  return message;
+  /// Change code above this line
+  return result;
 }
-
-console.log(getShippingCost("Germany"));
+console.log(formatMessage("Curabitur ligula sapien", 16));
