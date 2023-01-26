@@ -1,12 +1,5 @@
-function formatMessage(message, maxLength) {
-  let result;
-  // Change code below this line
-  if (message.length <= maxLength) {
-    result = message;
-  } else {
-    result = `${message.slice(0, maxLength)}...`;
-  }
-  /// Change code above this line
+function checkForName(fullName, name) {
+  const result = fullName.includes(fullName); name.includes(name); // Change this line
   return result;
 }
-console.log(formatMessage("Curabitur ligula sapien", 16));
+console.log(checkForName("Egor Kolbasov", "egor"));
