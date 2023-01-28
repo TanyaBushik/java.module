@@ -1,5 +1,15 @@
-function checkForName(fullName, name) {
-  const result = fullName.includes(fullName); name.includes(name); // Change this line
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+  message.toLowerCase().includes("sale") ||
+    message.toLowerCase().includes("spam") ? result = true : result = false;
+  // Change code above this line
   return result;
 }
-console.log(checkForName("Egor Kolbasov", "egor"));
+console.log(checkForSpam("Latest technology news"));
+console.log(checkForSpam("JavaScript weekly newsletter"));
+console.log(checkForSpam("Get best sale offers now!"));
+console.log(checkForSpam("Amazing SalE, only tonight!"));
+console.log(checkForSpam("Trust me, this is not a spam message"));
+console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+console.log(checkForSpam("[SPAM] How to earn fast money?"));
