@@ -1,15 +1,17 @@
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-  message.toLowerCase().includes("sale") ||
-    message.toLowerCase().includes("spam") ? result = true : result = false;
-  // Change code above this line
-  return result;
+const min = 6;
+const max = 13;
+let total = 0;
+
+for (let i = min; i <= max; i += 1) {
+
+  if (i % 2 !== 0) {
+    console.log("Не четное: ", i);
+    continue;
+  }
+  
+   console.log("четное ", i);
+
+   total += i;
 }
-console.log(checkForSpam("Latest technology news"));
-console.log(checkForSpam("JavaScript weekly newsletter"));
-console.log(checkForSpam("Get best sale offers now!"));
-console.log(checkForSpam("Amazing SalE, only tonight!"));
-console.log(checkForSpam("Trust me, this is not a spam message"));
-console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
-console.log(checkForSpam("[SPAM] How to earn fast money?"));
+
+console.log("total", total);
