@@ -187,16 +187,16 @@
 // console.log(calculateEngravingPrice("Web-development is creative work", 20));
 
 
-function makeStringFromArray(array, delimiter) {
-  let string;
-  // Change code below this line
-string = array.join(delimiter);
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   // Change code below this line
+// string = array.join(delimiter);
 
-  // Change code above this line
-  return string;
-}
-console.log(
-  makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ")
-);
-console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
-console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
+//   // Change code above this line
+//   return string;
+// }
+// console.log(
+//   makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ")
+// );
+// console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
+// console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
