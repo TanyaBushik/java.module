@@ -33,13 +33,12 @@
 
 // console.log(message);
 
-
 //  написать скрипт выбора самого маленького числа
 // const numbers = [51, 25, 89, 68, 14, 36, 7, 58, 15]
 // let smallestNumber = numbers[0];
 
 // for (const number of numbers) {
- 
+
 //     if (number < smallestNumber) {
 //         smallestNumber = number;
 //     }
@@ -51,13 +50,12 @@
 // let biggestNumber = numbers[0];
 
 // for (const number of numbers) {
-    
+
 //     if (number > biggestNumber) {
 //       biggestNumber = number;
 //     }
 // }
 // console.log(biggestNumber);
-
 
 // сшить массив в строку
 
@@ -74,12 +72,12 @@
 
 // for (const letter of letters) {
 
-    // if (letter === letter.toLowerCase()){
-    // invertedString += letter.toUpperCase();
+// if (letter === letter.toLowerCase()){
+// invertedString += letter.toUpperCase();
 
-    // } else {
-    // invertedString += letter.toLowerCase();
-    // }
+// } else {
+// invertedString += letter.toLowerCase();
+// }
 
 //     invertedString +=
 //         letter === letter.toLowerCase()
@@ -88,7 +86,6 @@
 // }
 
 // console.log(invertedString);
-
 
 // разделить  строку дефисами
 //     const title = 'Top 10 benefits of React framewor';
@@ -117,17 +114,29 @@
 // }
 // console.log(total);
 
+// function slugify(title) {
 
-function slugify(title) {
-  // Change code below this line
+// const slug = title.toLowerCase().split(" ").join("-");
+// return title.toLowerCase().split(" ").join("-");
+// }
+// console.log(slugify("Arrays for begginers"));
+// console.log(slugify("English for developer"));
+// console.log(slugify("Ten secrets of JavaScript"));
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
 
-    const normalizedTitle = title.toLowerCase();
-    console.log(normalizedTitle);
-    const words = normalizedTitle.split(" ");
-     console.log(words);
-    const slugify = words.join("-");
-    console.log(slugify);
+// написати скрипт для обчислення площі прямокутника зі сторонами,
+// значення яких зберігається у змінній "values" у вигляді рядка.
+// Значення розділене пробілом.
+// const values = '8 11';
+// const valuesArr = values.split(' ');
+// const result = Number(valuesArr[0]) * Number(valuesArr[1]);
 
-  // Change code above this line
+// console.log(result);
+
+const names = "Jacob,William,Solomon,Artemis".split(",");
+const phones = "380665214589,380934478526,380505663214,380735598212".split(",");
+
+for (const name of names) {
+  const i = names.indexOf(name);
+  console.log(name, phones[i]);
 }
-console.log(slugify("Arrays for begginers"));
