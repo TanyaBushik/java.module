@@ -133,10 +133,10 @@
 
 // console.log(result);
 
-const names = "Jacob,William,Solomon,Artemis".split(",");
-const phones = "380665214589,380934478526,380505663214,380735598212".split(",");
+// const names = "Jacob,William,Solomon,Artemis".split(",");
+// const phones = "380665214589,380934478526,380505663214,380735598212".split(",");
 
-for (const name of names) {
-  const i = names.indexOf(name);
-  console.log(name, phones[i]);
-}
+// for (const name of names) {
+//   const i = names.indexOf(name);
+//   console.log(name, phones[i]);
+// }
