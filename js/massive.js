@@ -64,6 +64,7 @@
 // const string = friends.join(',');
 // console.log(string);
 
+
 // строку "JavaScript" сделать "jAVAsCRIPT"
 
 // const string = "JavaScript";
@@ -117,8 +118,10 @@
 // function slugify(title) {
 
 // const slug = title.toLowerCase().split(" ").join("-");
+
 // return title.toLowerCase().split(" ").join("-");
 // }
+
 // console.log(slugify("Arrays for begginers"));
 // console.log(slugify("English for developer"));
 // console.log(slugify("Ten secrets of JavaScript"));
