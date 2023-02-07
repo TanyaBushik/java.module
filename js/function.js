@@ -269,22 +269,22 @@
 // console.log(findNumber(16, 35, 7));
 
 
-function includes(array, value) {
+// function includes(array, value) {
 
-  for (const number of array) {
-    if (number === value) {
-       return true;
-    }
-  }
-  return false;
-}
-console.log(includes([1, 2, 3, 4, 5], 3));
-console.log(includes([1, 2, 3, 4, 5], 17));
-console.log(
-  includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
-);
-console.log(
-  includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
-);
-console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
-console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+//   for (const number of array) {
+//     if (number === value) {
+//        return true;
+//     }
+//   }
+//   return false;
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(
+//   includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
+// );
+// console.log(
+//   includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
+// );
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
