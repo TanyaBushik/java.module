@@ -361,26 +361,87 @@ const getFriendsByStatus = function (allFriends) {
 // console.log(getAllPropValues("category"));
 
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function calculateTotalPrice(productName) {
-    // Change code below this line
-    let total = 0;
+// function calculateTotalPrice(productName) {
+//     // Change code below this line
+//     let total = 0;
 
-    for (const product of products) {
-        if ((product.name === productName)) {
-            total += product.price * product.quantity;
-        }
-    }
-     return total;
-}
-console.log(calculateTotalPrice("Blaster"));
-console.log(calculateTotalPrice("Radar"));
-console.log(calculateTotalPrice("Droid"));
-console.log(calculateTotalPrice("Grip"));
-console.log(calculateTotalPrice("Scanner"));
+//     for (const product of products) {
+//         if ((product.name === productName)) {
+//             total += product.price * product.quantity;
+//         }
+//     }
+//      return total;
+// }
+// console.log(calculateTotalPrice("Blaster"));
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Droid"));
+// console.log(calculateTotalPrice("Grip"));
+// console.log(calculateTotalPrice("Scanner"));
+
+
+// const temps = [14, -4, 25, 8, 11];
+// console.log(Math.max(...temps));
+
+// const lastWeekTemps = [14, 25, 11];
+// const currentWeekTemps = [23, 17, 18];
+// const allTemps = [...lastWeekTemps, ...currentWeekTemps];
+// console.log(allTemps); 
+
+
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, propD: 20 };
+
+// const third = { ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15, propD: 20 }
+
+// const fourth = { ...second, ...first };//{propC: 50, propD: 20, propA: 5, propB: 10}
+// console.log(fourth);
+
+
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15 };
+
+// const third = { propB: 20, ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15 }
+
+// const fourth = { ...first, ...second, propB: 20 };
+// console.log(fourth); // { propA: 5, propB: 20, propC: 15 }
+
+// const fifth = { ...first, propB: 20, ...second };
+// console.log(fifth); // { propA: 5, propB: 20, propC: 15 }
+
+
+const forecast = {
+  today: {
+    low: 28,
+    high: 32,
+    icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+  },
+  tomorrow: {
+    low: 27,
+    high: 31,
+  },
+};
+// Change code below this line
+
+const {
+  high: highToday,
+  low: lowToday,
+  icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+  tomorrow: {
+    low: lowTomorrow,
+    high: highTomorrow,
+    icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+  },
+} = forecast;
+
+console.log(forecast);
