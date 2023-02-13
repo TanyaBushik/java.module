@@ -83,7 +83,7 @@
 // console.table(friends);
 // // ищем друга по имени
 
-// const findFriendByName = function (allFriends, friendName) { 
+// const findFriendByName = function (allFriends, friendName) {
 
 //     for (const friend of allFriends) {
 //         console.log(friend.name);
@@ -135,7 +135,7 @@
 //     for (const friend of allFriends) {
 //         if (!friend.online) {
 //             offlineFriends.push(friend);
-//         }    
+//         }
 //     }
 //     return offlineFriends;
 // };
@@ -629,53 +629,114 @@
 //   },
 // };
 
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
 
-  // Change code below this line
-  getPotions() {
+
+// module 3/41
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+
+//   // Change code below this line
+//   getPotions() {
    
-    return this.potions;
-  },
+//     return this.potions;
+//   },
 
-  addPotion(newPotion) {
+//   addPotion(newPotion) {
 
-    for (const potion of this.potions) {
-      if (newPotion.name === potion.name) {
-        return `Error! Potion ${newPotion.name} is already in your inventory!`;;
-      }
-    }
-     return this.potions.push(newPotion);
-  },
-  removePotion(potionName) {
+//     for (const potion of this.potions) {
+//       if (newPotion.name === potion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;;
+//       }
+//     }
+//      return this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
 
-    for (let i = 0; i < this.potions.length; i += 1) {
-        const item = this.potions[i];
-        if (potionName === item.name) {
-          return this.potions.splice(i, 1);
-        }
-      }
-      return `Potion ${potionName} is not in inventory!`;
-  },
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//         const item = this.potions[i];
+//         if (potionName === item.name) {
+//           return this.potions.splice(i, 1);
+//         }
+//       }
+//       return `Potion ${potionName} is not in inventory!`;
+//   },
 
-  updatePotionName(oldName, newName) {
+//   updatePotionName(oldName, newName) {
 
-    for (let i = 0; i < this.potions.length; i += 1) {
-        const item = this.potions[i];
-      if (oldName === item.name) {
-        return item.name = newName;
-      }
-    }
-      return `Potion ${oldName} is not in inventory!`;
-  },
-};
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//         const item = this.potions[i];
+//       if (oldName === item.name) {
+//         return item.name = newName;
+//       }
+//     }
+//       return `Potion ${oldName} is not in inventory!`;
+//   },
+// };
 // console.log(atTheOldToad.getPotions());
 // console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
 // console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
 // console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
-console.log(atTheOldToad.removePotion("Dragon breath"));
+// console.log(atTheOldToad.removePotion("Dragon breath"));
   
+
+// function transformUsername({ firstName, lastName, ...other }) {
+//   return {
+//     ...other,
+//     fullName: `${firstName} ${lastName}`
+//   };
+// }
+// console.log(transformUsername({
+//   id: 1,
+//   firstName: "Jacob",
+//   lastName: "Mercer",
+//   email: "j.mercer@mail.com",
+//   friendCount: 40,
+// }));
+
+// const obj = {
+//   fullName: "Peter Pen",
+//   activities: ["fly", "play", "run"],
+//   dress: {
+//     hat: "Green Hat",
+//     pants: 'Green Pants',
+//   },
+//   job: [{
+//     position: 'friend',
+//     offices: [{
+//       location: 'Kyiv',
+//       number: 1,
+//     }]
+//   }]
+// };
+
+// const { activities: [firstActivity], } = obj;
+// console.log(firstActivity); // 'fly'
+
+// const {
+//   activities: [ , secondActivity],
+// } = obj;
+// console.log(secondActivity); // "play"
+
+// const {
+//   dress: { pants: favouritePants },
+// } = obj;
+// console.log(favouritePants); // 'Green Pants'
+
+// const {
+//   dress: { boots: favouriteBoots = 'crosses'}, // crosses - it's a default meaning
+// } = obj;
+// console.log(favouriteBoots); // 'crosses'
+
+// const {
+//   job: [
+//     {
+//       offices: [{ location: officeLocation }],
+//     },
+//   ],
+// } = obj;
+// console.log(officeLocation);
