@@ -126,16 +126,88 @@
 // pizzaPalace.order("Big Mike", makePizza, onOrderError);
 // pizzaPalace.order("Vienna", makePizza, onOrderError);
 
-function calculateTotalPrice(orderedItems) {
-  let totalPrice = 0;
-  // Change code below this line
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
 
-  orderedItems.forEach(function(number) {
-    totalPrice += number;
-  });
+//   orderedItems.forEach(function(number) {
+//     totalPrice += number;
+//   });
   
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
 
-  // Change code above this line
-  return totalPrice;
-}
-console.log(calculateTotalPrice([12, 85, 37, 4]));
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+
+//   firstArray.forEach(function(number) {
+//     if (secondArray.includes(number)) {
+//       commonElements.push(number);
+//     }
+//   });
+
+//   return commonElements;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newEven = [];
+
+//   numbers.forEach(element => {
+//     if (element % 2 === 0) {
+//       element += value;
+//     }
+//     newEven.push(element);
+//   });
+// return newEven;
+// }
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map((planet) => planet.length);
+
+// console.log(planetsLengths);
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    genres: ["adventure", "history"],
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    genres: ["fiction"],
+  },
+  {
+    title: "Redder Than Blood",
+    author: "Tanith Lee",
+    genres: ["horror", "mysticism"],
+  },
+];
+// Change code below this line
+
+const genres = books.flatMap((book) => book.title);
