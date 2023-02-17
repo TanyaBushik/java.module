@@ -186,28 +186,72 @@
 
 
 // const planets = ["Earth", "Mars", "Venus", "Jupiter"];
-// // Change code below this line
+
 // const planetsLengths = planets.map((planet) => planet.length);
 
 // console.log(planetsLengths);
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    genres: ["adventure", "history"],
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    genres: ["fiction"],
-  },
-  {
-    title: "Redder Than Blood",
-    author: "Tanith Lee",
-    genres: ["horror", "mysticism"],
-  },
-];
-// Change code below this line
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
 
-const genres = books.flatMap((book) => book.title);
+// const genres = books.flatMap((book) => book.genres);
+
+
+// const getUserNames = (users) => {
+//   const names = users.map((user) => user.name);
+//   return names;
+// };
+
+// // верхняя и нижняя функции одинаковые , запись разная
+
+// const getUserEmails = (users) => users.map((user) => user.email);
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticism"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism", "adventure"],
+//   },
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap((book) => book.genres);
+// const uniqueGenres = allGenres.filter(
+//   (genre, index, array) => array.indexOf(genre) === index
+// );
+
+const getFriends = (users) => {
+  const allFriends = users.flatMap((user) => user.friends);
+
+  const uniqueFriends = allFriends.filter(
+    (friend, index, array) => array.indexOf(friend) === index
+  );
+
+  return uniqueFriends;
+};
+
