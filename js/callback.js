@@ -245,13 +245,132 @@
 //   (genre, index, array) => array.indexOf(genre) === index
 // );
 
-const getFriends = (users) => {
-  const allFriends = users.flatMap((user) => user.friends);
+// const getFriends = (users) => {
+//   const allFriends = users.flatMap((user) => user.friends);
 
-  const uniqueFriends = allFriends.filter(
-    (friend, index, array) => array.indexOf(friend) === index
-  );
+//   const uniqueFriends = allFriends.filter(
+//     (friend, index, array) => array.indexOf(friend) === index
+//   );
 
-  return uniqueFriends;
-};
+//   return uniqueFriends;
+// };
 
+
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const tags = tweets.reduce((allTags, tweet) => {
+//   allTags.push(...tweet.tags);
+
+//   return allTags;
+// }, []);
+
+// console.log(tags);
+
+// const getTags = (tweets) =>
+//   tweets.reduce((allTags, tweet) => {
+//     allTags.push(...tweet.tags);
+
+//     return allTags;
+//   }, []);
+
+// console.log(getTags(tweets));
+
+
+// const getTags = (tweets) =>
+//   tweets.reduce((allTags, tweet) => {
+//     allTags.push(...tweet.tags);
+
+//     return allTags;
+//   }, []);
+
+// const tags = getTags(tweets);
+
+// const getTagStats = (acc, tag) => {
+//   if (!acc.hasOwnProperty(tag)) {
+//     acc[tag] = 0;
+//   }
+
+//   acc[tag] += 1;
+
+//   return acc;
+// };
+
+// const countTags = (tags) => tags.reduce(getTagStats, {});
+
+// const tagCount = countTags(tags);
+// console.log(tagCount);
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return total + player.playtime / player.gamesPlayed;
+// }, 0);
+// //  одинаковые, просто с {} and return
+// const totalAveragePlaytimePerGame = players.reduce(
+//   (total, player) => total + player.playtime / player.gamesPlayed, 0);
+
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+// const tags = tweets.reduce((allTags, tweet) => {
+//   allTags.push(...tweet.tags);
+
+//   return allTags;
+// }, []);
+
+// console.log(tags);
+
+// const getTags = (tweets) =>
+//   tweets.reduce((allTags, tweet) => {
+//     allTags.push(...tweet.tags);
+
+//     return allTags;
+//   }, []);
+
+// console.log(getTags(tweets));
+
+const players = [
+  { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+  { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+  { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+  { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+  { id: "player-5", name: 'Chelsy', timePlayed: 80, points:48, online: true },
+];
+
+// const playerNames = players.map((player) => player.name);
+// console.log("playerNames :", playerNames);
+
+// const playerId = players.map((player) => player.id);
+// console.log("playerId :", playerId);
+
+// const result = players.map(player => {
+//   return {
+//     name: player.name,
+//     online: player.online,
+//   };
+// });
+// console.log("result :", result);
+
+const playerIdToUpdate = "player-3";
+
+const updatedPlayer = players.map(player => playerIdToUpdate === player.id
+  ? { ...player, timePlayed: player.timePlayed + 100 }
+  : player,
+);
+console.log(updatedPlayer);
