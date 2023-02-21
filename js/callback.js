@@ -345,13 +345,13 @@
 
 // console.log(getTags(tweets));
 
-const players = [
-  { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
-  { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
-  { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
-  { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
-  { id: "player-5", name: 'Chelsy', timePlayed: 80, points:48, online: true },
-];
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: 'Chelsy', timePlayed: 80, points:48, online: true },
+// ];
 
 // const playerNames = players.map((player) => player.name);
 // console.log("playerNames :", playerNames);
@@ -367,10 +367,154 @@ const players = [
 // });
 // console.log("result :", result);
 
-const playerIdToUpdate = "player-3";
+// const playerIdToUpdate = "player-3";
 
-const updatedPlayer = players.map(player => playerIdToUpdate === player.id
-  ? { ...player, timePlayed: player.timePlayed + 100 }
-  : player,
-);
-console.log(updatedPlayer);
+// const updatedPlayer = players.map(player => playerIdToUpdate === player.id
+  // ? { ...player, timePlayed: player.timePlayed + 100 }
+//   : player,
+// );
+// console.log(updatedPlayer);
+
+// const salary = {
+//   mango: 100,
+//   poly: 50,
+//   ajax: 80,
+// };
+// const totalSalary = Object.values(salary).reduce(
+//   (total, value) => total + value,
+//   0
+// );
+// console.log(totalSalary);
+
+
+//  const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: 'Chelsy', timePlayed: 80, points:48, online: true },
+// ];
+
+// const totalTimePlayed = players.reduce(
+//   (total, player) => total + player.timePlayed,
+//   0,
+// );
+// console.log(totalTimePlayed);
+
+// const cart = [
+//   { label: "Apples", price: 100, quantity: 2 },
+//   { label: "Bananas", price: 120, quantity: 3 },
+//   { label: "Lemons", price: 70, quantity: 4 },
+// ];
+// const totalAmount = cart.reduce(
+//   (total, {price, quantity}) => total + price * quantity,
+//   0
+// );
+// console.log(totalAmount);
+
+
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const stats = tweets
+//   .flatMap(tweet => tweet.tags)
+//   .reduce(
+//     (acc, tag) => ({
+//       ...acc,
+//       [tag]: acc[tag] ? acc[tag] + 1 : 1,
+//     }),
+//     {}
+//   );
+
+// console.log(stats);
+
+
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: [
+//       "Jacklyn Lucas",
+//       "Linda Chapman",
+//       "Adrian Cross",
+//       "Solomon Fokes",
+//     ],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//   },
+// ];
+
+// const getTotalBalanceByGender = (users, gender) =>
+//   [...users]
+//     .filter((user) => user.gender === gender)
+//     .reduce((acc, user) => acc + user.balance, 0);
+
+//     console.log(getTotalBalanceByGender);
+
+
+const arr = [5, 6, 7, 8, 9];
+const sum = 0;
+const totalArr = arr.forEach(elem)  
+
+console.log(sum);
