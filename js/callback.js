@@ -513,8 +513,10 @@
 //     console.log(getTotalBalanceByGender);
 
 
-const arr = [5, 6, 7, 8, 9];
-const sum = 0;
-const totalArr = arr.forEach(elem)  
+// const arr = [5, 6, 7, 8, 9];
+// const sum = 0;
+// const totalArr = arr.forEach(elem)  
 
-console.log(sum);
+// console.log(sum);
+
+
