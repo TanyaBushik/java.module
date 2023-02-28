@@ -13,7 +13,6 @@
 //   console.log(`Індекс ${index}, значення ${number}`);
 // });
 
-
 // const doMath = function (a, b, callback) {
 //     const result = callback(a, b);
 
@@ -26,7 +25,6 @@
 // doMath(10, 8, function (x, y) {
 //   return x - y;
 // });
-
 
 // const filter = function (array, test) {
 //   const filteredArray = [];
@@ -55,7 +53,6 @@
 // const r3 = filter(fruits, getFruitsWithQuantity);
 // console.log(r3);
 
-
 // function makePizza() {
 //   return "Your pizza is being prepared, please wait.";
 // }
@@ -80,7 +77,6 @@
 //   }
 
 // console.log(makeMessage("Royal Grand", makePizza));
-
 
 // function makePizza(pizzaName, callback) {
 //   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
@@ -132,7 +128,7 @@
 //   orderedItems.forEach(function(number) {
 //     totalPrice += number;
 //   });
-  
+
 //   return totalPrice;
 // }
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
@@ -152,7 +148,6 @@
 // }
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
 // console.log(filterArray([1, 2, 3, 4, 5], 4));
-
 
 // function getCommonElements(firstArray, secondArray) {
 //   const commonElements = [];
@@ -184,7 +179,6 @@
 // console.log(changeEven([1, 2, 3, 4, 5], 10));
 // console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
 
-
 // const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 
 // const planetsLengths = planets.map((planet) => planet.length);
@@ -211,7 +205,6 @@
 
 // const genres = books.flatMap((book) => book.genres);
 
-
 // const getUserNames = (users) => {
 //   const names = users.map((user) => user.name);
 //   return names;
@@ -220,7 +213,6 @@
 // // верхняя и нижняя функции одинаковые , запись разная
 
 // const getUserEmails = (users) => users.map((user) => user.email);
-
 
 // const books = [
 //   {
@@ -255,7 +247,6 @@
 //   return uniqueFriends;
 // };
 
-
 // const tweets = [
 //   { id: "000", likes: 5, tags: ["js", "nodejs"] },
 //   { id: "001", likes: 2, tags: ["html", "css"] },
@@ -280,7 +271,6 @@
 //   }, []);
 
 // console.log(getTags(tweets));
-
 
 // const getTags = (tweets) =>
 //   tweets.reduce((allTags, tweet) => {
@@ -370,7 +360,7 @@
 // const playerIdToUpdate = "player-3";
 
 // const updatedPlayer = players.map(player => playerIdToUpdate === player.id
-  // ? { ...player, timePlayed: player.timePlayed + 100 }
+// ? { ...player, timePlayed: player.timePlayed + 100 }
 //   : player,
 // );
 // console.log(updatedPlayer);
@@ -385,7 +375,6 @@
 //   0
 // );
 // console.log(totalSalary);
-
 
 //  const players = [
 //   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
@@ -412,7 +401,6 @@
 // );
 // console.log(totalAmount);
 
-
 // const tweets = [
 //   { id: "000", likes: 5, tags: ["js", "nodejs"] },
 //   { id: "001", likes: 2, tags: ["html", "css"] },
@@ -432,7 +420,6 @@
 //   );
 
 // console.log(stats);
-
 
 // const users = [
 //   {
@@ -512,11 +499,132 @@
 
 //     console.log(getTotalBalanceByGender);
 
-
 // const arr = [5, 6, 7, 8, 9];
 // const sum = 0;
-// const totalArr = arr.forEach(elem)  
+// const totalArr = arr.forEach(elem)
 
 // console.log(sum);
 
+const cars = [
+  {
+    make: "Honda",
+    model: "CR-V",
+    type: "suv",
+    amount: 14,
+    price: 24045,
+    onSale: true,
+  },
+  {
+    make: "Honda",
+    model: "Accord",
+    type: "sedan",
+    amount: 2,
+    price: 22455,
+    onSale: true,
+  },
+  {
+    make: "Mazda",
+    model: "Mazda 6",
+    type: "sedan",
+    amount: 8,
+    price: 24195,
+    onSale: false,
+  },
+  {
+    make: "Mazda",
+    model: "CX-9",
+    type: "suv",
+    amount: 7,
+    price: 31520,
+    onSale: true,
+  },
+  {
+    make: "Toyota",
+    model: "4Runner",
+    type: "suv",
+    amount: 19,
+    price: 34210,
+    onSale: false,
+  },
+  {
+    make: "Toyota",
+    model: "Sequoia",
+    type: "suv",
+    amount: 16,
+    price: 45560,
+    onSale: false,
+  },
+  {
+    make: "Toyota",
+    model: "Tacoma",
+    type: "truck",
+    amount: 4,
+    price: 24320,
+    onSale: true,
+  },
+  {
+    make: "Ford",
+    model: "F-150",
+    type: "truck",
+    amount: 11,
+    price: 27110,
+    onSale: true,
+  },
+  {
+    make: "Ford",
+    model: "Fusion",
+    type: "sedan",
+    amount: 13,
+    price: 22120,
+    onSale: true,
+  },
+  {
+    make: "Ford",
+    model: "Explorer",
+    type: "suv",
+    amount: 6,
+    price: 31660,
+    onSale: false,
+  },
+];
 
+// const getModels = cars => cars.map((car) => car.model);
+// console.log(getModels(cars));
+
+//? Example 2 - Метод map
+// Нехай функція makeCarsWithDiscount повертає новий масив об'єктів із змінним значенням
+//властивості price залежно від переданої знижки.
+
+// const makeCarsWithDiscount = (cars, discount) =>
+//   cars.map((car) => ({ ...car, price: car.price * (1 - discount) }));
+
+// console.table(makeCarsWithDiscount(cars, 0.2));
+// console.table(makeCarsWithDiscount(cars, 0.4));
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//? Example 5 - Метод filter
+// Нехай функція getCarsWithType повертає масив автомобілів тип яких збігається
+// зі значенням параметра type.
+
+// const getCarsWithType = (cars, type) => cars.filter(car => car.type === type);
+
+// console.table(getCarsWithType(cars, "suv"));
+// console.table(getCarsWithType(cars, "sedan"));
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//? Example 6 - Метод find
+
+// const getCarByModel = (cars, model) => cars.find(car => car.model === model);
+
+// console.table(getCarByModel(cars, "F-150"));
+// console.table(getCarByModel(cars, "CX-9"));
+
+//? Example 7 - Метод sort
+// Нехай функція sortByAscendingAmount повертає новий масив автомобілів відсортований за
+// зростанням значення властивості amount.
+
+// const sortByDescendingPrice = (cars) => [...cars].sort((a, b) => a.amount - b.amount);
+
+//   console.table(sortByDescendingPrice(cars));
