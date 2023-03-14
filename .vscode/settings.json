@@ -89,5 +89,6 @@
     "якості",
     "Якщо"
   ],
-  "cSpell.ignoreWords": ["Портфолио"]
+  "cSpell.ignoreWords": ["Портфолио"],
+  "liveServer.settings.port": 5501
 }
